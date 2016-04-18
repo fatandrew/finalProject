@@ -4,6 +4,7 @@ import com.sun.xml.internal.fastinfoset.util.StringIntMap;
 
 import javax.swing.*;
 import java.util.*;
+import java.util.Deque;
 import java.util.LinkedList;
 
 public class InputIntegersToList {
@@ -45,7 +46,11 @@ public class InputIntegersToList {
 
         System.out.println("Adding '0' to a queue");
         list.add(2,0);
+        Integer [] nums = list.toArray();
+        list.remove(list.length-1);
         System.out.println("List: " +list);
+
+
 
 
     }

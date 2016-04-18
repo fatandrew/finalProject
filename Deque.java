@@ -13,7 +13,7 @@ public class Deque {
         data = new int[this.size = size];
     }
 
-    void pushBack(int value) {
+   public void pushBack(int value) {
         if (++tail == size)
             tail = 0;
         data[tail] = value;
