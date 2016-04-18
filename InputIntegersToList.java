@@ -9,10 +9,15 @@ import java.util.LinkedList;
 
 public class InputIntegersToList {
     public static void main(String[] args){
+        Scanner scannerstart = new Scanner(System.in);
+        System.out.println("Enter '1' if you want to make a List of numbers or enter anything if you don't want to make a List: " );
+        int EnteringNumbers = scannerstart.nextInt();
+
+        if (EnteringNumbers==1){
+
         Scanner scan = new Scanner(System.in);
         LinkedList<Integer> list = new LinkedList<Integer>();
-        System.out.println("Enter numbers please, when it will be enough enter a char: ");
-
+       System.out.println("Enter numbers please, when it will be enough enter a char: ");
 
         while(scan.hasNextInt()){
             list.add(scan.nextInt());
@@ -46,13 +51,14 @@ public class InputIntegersToList {
 
         System.out.println("Adding '0' to a queue");
         list.add(2,0);
-        Integer [] nums = list.toArray();
-        list.remove(list.length-1);
+        list.remove(nums.length-1);
         System.out.println("List: " +list);
 
 
 
 
     }
+        else {
+            System.out.println("Thank you for your attention");
 
-}
+}}}
