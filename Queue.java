@@ -8,20 +8,24 @@ public class Queue {
     int head;
     int tail;
     int[] data;
-   Queue(int size) {
-    data = new int [this.size = size];
+
+    Queue(int size) {
+        data = new int[this.size = size];
     }
+
     void add(int value) {
-     if (++tail == size)
-         tail = 0;
+        if (++tail == size)
+            tail = 0;
         data[tail] = value;
-     }
-   int extract() {
-       if (++head == size)
-             head = 0;
+    }
+
+    int extract() {
+        if (++head == size)
+            head = 0;
         return data[head];
-       }
-        boolean isEmpty() {
+    }
+
+    boolean isEmpty() {
         return head == tail;
     }
 

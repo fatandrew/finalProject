@@ -6,13 +6,16 @@ package com.company;
 public class Stack {
     int size;
     int[] data;
+
     Stack(int capacity) {
-    data = new int [capacity];
+        data = new int[capacity];
     }
+
     void push(int value) {
-    data[size++] = value;
+        data[size++] = value;
     }
+
     int pop() {
-    return data[--size];
+        return data[--size];
     }
 }
